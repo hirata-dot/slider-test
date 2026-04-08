@@ -7,7 +7,7 @@
     <style>
       :root {
         color-scheme: light;
-        --split: 0%;
+        --split: 53%;
       }
       * {
         box-sizing: border-box;
@@ -55,7 +55,7 @@
       }
       .after-image {
         z-index: 2;
-        clip-path: inset(0 0 0 0%);
+        clip-path: inset(0 0 0 53%);
         opacity: 0.55;
         transition: clip-path 120ms cubic-bezier(0.22, 1, 0.36, 1);
       }
@@ -63,7 +63,7 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 0%;
+        left: 53%;
         width: 4px;
         background: #3b82f6;
         transform: translateX(-50%);
@@ -77,7 +77,7 @@
       .handle {
         position: absolute;
         top: 50%;
-        left: 0%;
+        left: 53%;
         width: 52px;
         height: 52px;
         border-radius: 9999px;
@@ -159,7 +159,7 @@
         <div class="handle" id="handle">&#9664;&#9654;</div>
         <div class="badge badge-before">Before</div>
         <div class="badge badge-after">After</div>
-        <input id="range" class="range" type="range" min="0" max="100" value="0" aria-label="Before After Split" />
+        <input id="range" class="range" type="range" min="0" max="100" value="53" aria-label="Before After Split" />
       </div>
       <p class="meta">Drag the divider or move the range slider to compare the images.</p>
     </div>
@@ -184,7 +184,7 @@
     updateSlider(event.target.value);
   });
 
-  updateSlider(0);
+  updateSlider(53);
 })();</script>
   </body>
 </html>
